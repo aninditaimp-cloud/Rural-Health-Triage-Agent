@@ -1,7 +1,7 @@
 # Rural Health Triage Agent
 
 ## Project Overview
-This project is a command-line intelligent agent designed to act as a preliminary triage tool for low-resource environments. [cite_start]It utilizes Supervised Learning (Classification) concepts from the Fundamentals of AI and ML course [cite: 106] to predict the likelihood of common diseases based on a patient's reported symptoms. 
+This project is a command-line intelligent agent designed to act as a preliminary triage tool for low-resource environments. It utilizes Supervised Learning (Classification) concepts from the Fundamentals of AI and ML course to predict the likelihood of common diseases based on a patient's reported symptoms. 
 
 ## Prerequisites
 * Python 3.8+
@@ -27,14 +27,14 @@ Follow these exact steps to set up the environment:
 3. **Install dependencies:**
    pip install -r requirements.txt
 
-## Configuration
-Before running the agent, you must train the classification model using the provided dataset.
+## Configuration & Training
 
-Run the following command from the project root:
-python train_model.py
+This repository includes a pre-trained machine learning model (`triage_model.pkl` and `model_features.pkl`). **You do not need to train the model to use the application.** **[Optional] Retraining the Model:**
+If you wish to rebuild the model from scratch, you can run the training script from the project root:
 
-This script reads the symptom data from data/symptoms.csv, trains the classifier, and generates a saved model file (triage_model.pkl) required for execution.
+`python train_model.py`
 
+This script will read the raw medical data from `symptoms.csv`, process the categorical features using One-Hot Encoding, train a new Random Forest Classifier, and overwrite the existing model files.
 ## Execution
 This project is fully executable via the command line.
 
