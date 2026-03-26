@@ -17,14 +17,19 @@ Follow these exact steps to set up the environment:
 
 2. **Create and activate a virtual environment:**
    Windows:
+   ```DOS
    python -m venv venv
    venv\Scripts\activate
+   ```
 
-   macOS/Linux:
+   *macOS/Linux:
+   ```bash
    python3 -m venv venv
    source venv/bin/activate
+   
 
 3. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
 
 ## Configuration & Training
@@ -35,6 +40,7 @@ If you wish to rebuild the model from scratch, you can run the training script f
 `python train_model.py`
 
 This script will read the raw medical data from `symptoms.csv`, process the categorical features using One-Hot Encoding, train a new Random Forest Classifier, and overwrite the existing model files.
+
 ## Execution
 This project is fully executable via the command line.
 
