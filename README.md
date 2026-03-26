@@ -12,8 +12,8 @@ Follow these exact steps to set up the environment:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-github-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/aninditaimp-cloud/Rural-Health-Triage-Agent.git
+   cd Rural-Health-Triage-Agent
 
 2. **Create and activate a virtual environment:**
 
